@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Home from './tsx/Home'; 
 import Projects from './tsx/Projects';
+import ProjectDetailList from './tsx/ProjectDetailList';
 
 const App: React.FC = () => {
   return (
@@ -20,7 +21,7 @@ const App: React.FC = () => {
       </div>
       <Routes>
         <Route path="/projects" element={<Projects />} />
-        <Route path="/projects/budget-app" element={<Projects />} />
+        <Route path="/projects/:projectId/:projectName" element={<ProjectDetailList />} />
         <Route path="/" element={<Home />} />
       </Routes>
     </Router>

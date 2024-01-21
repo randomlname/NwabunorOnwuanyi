@@ -22,7 +22,7 @@ const Projects: React.FC = () => {
                     `by adding or removing them as well as a budget tab to help users see their goal and monitor monthly payments.`,
       techStackImgUrl: 'https://skillicons.dev/icons?i=react,nodejs,postgres,sequelize',
       alt: 'React, Nodejs, Postgres, Sequelize',
-      path: '/projects/budget-app',
+      path: '/projects/2/Budget-App' ,
       githubUrl: '',
     },
     {
