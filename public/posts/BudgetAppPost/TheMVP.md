@@ -1,4 +1,4 @@
-## The MVP
+# The MVP
 
 I decided that the MVP for this project would be:  
 1. Registering/login.  
@@ -15,4 +15,10 @@ I decided that the MVP for this project would be:
     2. Verify email  
     3. Two-factor auth  
     4. Dark mode  
-8. Budget tab where the user can set goals they want to meet.
+8. Budget tab where the user can set goals they want to meet.  
+
+## Tech stack
+For the tech stack, I decided to use Nodejs instead of Python. I wanted to use Python with Django or Flask originally because I wanted to use some machine learning for Personalized financial advice and Analysis for investments, but I decided to save that for another
+project instead and try to build the base for this one.  
+  
+I used React because I haven't programmed in React for a while, and I thought it would be a good refresher.

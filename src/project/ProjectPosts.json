@@ -2,8 +2,50 @@
     "2": 
     [
       {
+        "id": 7,
+        "title": "Account page",
+        "date": "January 22 2024",
+        "folder": "BudgetAppPost",
+        "filename": "AccountPage.md"
+      },
+      {
+        "id": 6,
+        "title": "Calendar page & future issues? with it",
+        "date": "December 22 2023",
+        "folder": "BudgetAppPost",
+        "filename": "CalendarPage.md"
+      },
+      {
+        "id": 5,
+        "title": "Some settings functionality",
+        "date": "December 18 2023",
+        "folder": "BudgetAppPost",
+        "filename": "SomeSettingsFunction.md"
+      },
+      {
+        "id": 4,
+        "title": "Dashboard page",
+        "date": "December 13 2023",
+        "folder": "BudgetAppPost",
+        "filename": "DashboardPage.md"
+      },
+      {
+        "id": 3,
+        "title": "Database migrations",
+        "date": "December 11 2023",
+        "folder": "BudgetAppPost",
+        "filename": "DatabaseStuff.md"
+      },
+      {
+        "id": 2,
+        "title": "Getting started",
+        "date": "December 11 2023",
+        "folder": "BudgetAppPost",
+        "filename": "GettingStartedAndBasicPage.md"
+      },
+      {
         "id": 1,
-        "title": "Deciding on the MVP",
+        "title": "Deciding on the MVP and tech stack",
         "date": "December 8 2023",
         "folder": "BudgetAppPost",
         "filename": "TheMVP.md"
