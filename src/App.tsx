@@ -21,7 +21,7 @@ const NavigationBar: React.FC = () => {
   }, [darkMode]);
 
   const navItemClass = (path: string) => {
-    return location.pathname === path ? 'bg-gray-700 hover:text-gray-300' : 'hover:text-gray-300';
+    return location.pathname === path ? 'bg-gray-700 hover:text-gray-300 rounded-3xl' : 'hover:text-gray-300';
   };
 
   return (

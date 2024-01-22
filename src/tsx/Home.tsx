@@ -4,7 +4,7 @@ const Home: React.FC = () => {
     return (
       <div className="container mx-auto px-4">
         <h1 className="text-4xl font-bold text-center my-6">Nwabunor Jeff Onwuanyi</h1>
-        <h2 className="text-2xl text-center my-7">Software Developer | Full-stack Developer</h2>
+        <h2 className="text-2xl text-center my-7">Software Developer | Full-stack Developer </h2>
 
         <div className="flex justify-center space-x-4 my-4">
             <a href="https://github.com/randomlname" target="_blank" rel="noreferrer">
@@ -14,7 +14,12 @@ const Home: React.FC = () => {
                 <img src="https://skillicons.dev/icons?i=linkedin" width="60" height="70" alt="linkedin" />
             </a>
         </div>
-        
+
+        <h4 className='text-center border-b-2'>
+            I have a passion for building web and mobile applications. with skills in PHP, SQL, React and REST API, with a growing expertise in  AWS services. I am enthusiastic about web development, 
+            machine learning and statistical analysis, and experienced in diverse programming languages such as Haskell, Verlog, Flutter and Rust.
+        </h4>
+
         <div className="mx-5 px-4 lg:mx-20 lg:px-20 py-7">
             <p className="lg:text-justify mb-10">
                 To enhance my programming skills, I decided to work on a series of projects, starting with the development of a budgeting app. This application is built using Node.js, React, and PostgreSQL, 
