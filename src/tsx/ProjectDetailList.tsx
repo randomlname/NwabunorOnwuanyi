@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import postsData from '../ProjectPosts.json';
+import postsData from '../project/ProjectPosts.json';
 import { Remarkable } from 'remarkable';
 import 'github-markdown-css';
 
@@ -41,9 +41,7 @@ const ProjectDetailList: React.FC = () => {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
             const markdownContent = await response.text();    
-            // const htmlContent = marked(markdownContent);
             setModalContent(markdownContent); 
-            console.log(markdownContent);
             setShowModal(true);
         } catch (error) {
             console.error('Error fetching post content:', error);
@@ -66,7 +64,11 @@ const ProjectDetailList: React.FC = () => {
                     <ul className="list-inside lg:px-20">
                         {posts.map((post) => (
                             <li key={post.id} className="py-2">
-                                <Link to="#" onClick={() => handlePostClick(post.filename, post.folder)}>{post.title} - {post.date}</Link>
+                                <Link to="#" onClick={() => handlePostClick(post.filename, post.folder)} className="hover:text-blue-700 cursor-pointer transition duration-300 ease-in-out hover:underline">
+                                    <span className='text-xl font-semibold"'>{post.title}</span>
+                                    <span className='text-lg font-light italic'> - {post.date}</span>
+                                    <i className="fas fa-chevron-right ml-2"></i>
+                                </Link>
                             </li>
                         ))}
                     </ul>
@@ -74,7 +76,7 @@ const ProjectDetailList: React.FC = () => {
             </div>
             {showModal && (
                 <div className="fixed inset-0 bg-gray-600 bg-opacity-75 overflow-y-auto h-full w-full" id="my-modal">
-                    <div className="relative top-1/4 mx-auto p-8 w-11/12 max-w-4xl max-h-3/4 bg-gray-800 text-white shadow-lg rounded-md overflow-y-auto">
+                    <div className="relative top-20 mx-auto p-8 w-11/12 max-w-4xl max-h-3/4 bg-gray-800 text-white shadow-lg rounded-md overflow-y-auto">
                         <div className="mt-3 markdown-body p-8 space-y-4">
                             <div className="prose max-w-none" dangerouslySetInnerHTML={{ __html: md.render(modalContent) }} />
                             <button onClick={() => setShowModal(false)} className="mt-4 bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded transition duration-200 ease-in-out" >

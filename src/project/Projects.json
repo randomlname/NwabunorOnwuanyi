@@ -1,0 +1,23 @@
+{
+    "Projects": 
+    [
+        {
+            "id": 2,
+            "title": "Budget application",
+            "description": "I wanted to test my skill in building a complex? application. The idea for this app is stright forward. It will enable the user to monitor transactions by adding or removing them as well as a budget tab to help users see their goal and monitor monthly payments.",
+            "techStackImgUrl": "https://skillicons.dev/icons?i=react,nodejs,postgres,sequelize",
+            "alt": "React, Nodejs, Postgres, Sequelize",
+            "path": "/projects/2/Budget-App",
+            "githubUrl": ""
+        },
+        {
+            "id": 1,
+            "title": "Hospital Database",
+            "description": "This project, which I developed during my school years with friends, was my first encounter with using a database, and I greatly enjoyed the experience. With the solid foundation it provided, I am looking forward to revisiting and redoing this project in the future. The functions of it inclued assigning doctors, nurses to patients and patients to rooms. The database was designed with tables for rooms, staff, and patients, incorporating relationships to track assignments, roles, working hours, and wages.",
+            "techStackImgUrl": "https://skillicons.dev/icons?i=php,mysql,bootstrap",
+            "alt": "Php, MySql, Bootstrap",
+            "path": "",
+            "githubUrl": "https://github.com/randomlname/HospitalDatabase"
+        }
+    ]
+}

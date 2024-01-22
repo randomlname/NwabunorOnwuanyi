@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { FaGithub, FaArrowRight } from 'react-icons/fa'; 
+import { FaGithub, FaArrowRight } from 'react-icons/fa';
+import projectData from '../project/Projects.json';
+
+type project = { id: number; title: string; description: string; techStackImgUrl: string; alt: string; path: string; githubUrl: string; };
+type ProjectData = { Projects: project[] };
 
 const Projects: React.FC = () => {
+  const [projects, setProjects] = useState<project[]>([]);
 
   const TechIcon = ({ alt, src }: { alt: string, src: string }) => (
     <div className="relative flex flex-col items-center group">
@@ -14,52 +19,38 @@ const Projects: React.FC = () => {
     </div>
   );
 
-  const projects = [
-    {
-      id: 2,
-      title: 'Budget application',
-      description: `I wanted to test my skill in building a complex application. The idea for this app is stright forward. It will enable the user to monitor transactions ` + 
-                    `by adding or removing them as well as a budget tab to help users see their goal and monitor monthly payments.`,
-      techStackImgUrl: 'https://skillicons.dev/icons?i=react,nodejs,postgres,sequelize',
-      alt: 'React, Nodejs, Postgres, Sequelize',
-      path: '/projects/2/Budget-App' ,
-      githubUrl: '',
-    },
-    {
-      id: 1,
-      title: 'Hospital Database',
-      description: `This project, which I developed during my school years with friends, was my first encounter with using a database, and I greatly enjoyed the experience. ` + 
-                    `With the solid foundation it provided, I am looking forward to revisiting and redoing this project in the future. The functions of it inclued assigning doctors, ` + 
-                    `nurses to patients and patients to rooms. The database was designed with tables for rooms, staff, and patients, incorporating relationships to track assignments, roles, working hours, and wages.`,
-      techStackImgUrl: 'https://skillicons.dev/icons?i=php,mysql,bootstrap',
-      alt: 'Php, MySql, Bootstrap',
-      path: '',
-      githubUrl: 'https://github.com/randomlname/HospitalDatabase',
-    },
-  ];
+  useEffect(() => {
+    const data: ProjectData = projectData as ProjectData;
+    const projectsArray = data.Projects;
 
+    if (projectsArray) {
+      setProjects(projectsArray);
+    } else {
+      console.error('Projects not found');
+    }
+  }, []);
 
   return (
     <div className="container mx-auto px-4 my-10">
       <div className="space-y-4">
         {projects.map(project =>
-          <div className="p-4 shadow rounded bg-white">
+          <div className="p-4 shadow rounded bg-gray-600">
             <h2 className="text-xl font-semibold">{project.title}</h2>
             <p className='my-5'>
               {project.description}
             </p>
             <div className="flex items-center">
-              <span className="mr-2">This project uses:</span>
+              <span className="mr-2">Project uses:</span>
               <TechIcon alt={project.alt} src={project.techStackImgUrl}/>
             </div>
             <div className="mt-4 flex justify-end items-center space-x-3">
               {project.githubUrl && (
-                <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-700">
-                  <FaGithub className="inline" /> GitHub
+                <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="text-gray-900 hover:text-gray-700 text-xl">
+                  <FaGithub className="inline mb-1" /> GitHub
                 </a>
               )}
               {project.path && (
-                <Link to={project.path} className="inline-block text-blue-500 hover:text-blue-700">
+                <Link to={project.path} className="inline-block text-blue-900 hover:text-blue-700 text-lg">
                   More Info <FaArrowRight className="inline" />
                 </Link>
               )}
