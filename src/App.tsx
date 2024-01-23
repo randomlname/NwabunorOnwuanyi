@@ -10,14 +10,18 @@ import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
 
 const NavigationBar: React.FC = () => {
   const location = useLocation();
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(() => {
+    const savedMode = localStorage.getItem('darkMode') === 'true';
+    return savedMode;
+  });
 
   const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
+    setDarkMode(prevMode => !prevMode); 
   };
 
   useEffect(() => {
     document.body.setAttribute('data-theme', darkMode ? 'dark' : 'light');
+    localStorage.setItem('darkMode', darkMode.toString());
   }, [darkMode]);
 
   const navItemClass = (path: string) => {

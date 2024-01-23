@@ -78,7 +78,7 @@ const ProjectDetailList: React.FC = () => {
     return (
         <div className="container mx-auto px-20 my-10">
             <div className="lg:flex justify-between lg:items-center">
-                <div className="rounded-full border-2 border-black w-12 h-12 flex items-center justify-center cursor-pointer" onClick={handleBackClick}>
+                <div className="rounded-full border-2 border-black md:w-12 h-12 flex items-center justify-center cursor-pointer" onClick={handleBackClick}>
                     <i className="fa-solid fa-angles-left"></i>
                 </div>
                 <h1 className="text-2xl font-bold my-4 lg:mb-20">Entries for {projectName}</h1>

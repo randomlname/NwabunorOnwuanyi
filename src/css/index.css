@@ -37,6 +37,11 @@ a {
   --link-color: #5599ff;
 }
 
+[data-theme="dark"] .projectDiv {
+  background-color: #333;
+  color: #cccccc;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

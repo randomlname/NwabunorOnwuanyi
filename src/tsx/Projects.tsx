@@ -34,7 +34,7 @@ const Projects: React.FC = () => {
     <div className="container mx-auto px-4 my-10">
       <div className="space-y-4">
         {projects.map(project =>
-          <div className="p-4 shadow rounded-3xl bg-gray-600">
+          <div key={project.id} className="projectDiv p-4 shadow rounded-3xl bg-gray-200">
             <h2 className="text-xl font-semibold">{project.title}</h2>
             <p className='my-5'>
               {project.description}
@@ -45,17 +45,17 @@ const Projects: React.FC = () => {
             </div>
             <div className="mt-4 flex justify-end items-center space-x-3">
               {project.externalUrl && (
-                <a href={project.externalUrl} target="_blank" rel="noopener noreferrer" className="text-black hover:text-gray-900 text-xl">
+                <a href={project.externalUrl} target="_blank" rel="noopener noreferrer" className="text-black hover:text-gray-500 text-xl">
                   <FaLink className="inline mb-1" /> Web link
                 </a>
               )}
               {project.githubUrl && (
-                <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="text-black hover:text-gray-900 text-xl">
+                <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="text-black hover:text-gray-500 text-xl">
                   <FaGithub className="inline mb-1" /> GitHub
                 </a>
               )}
               {project.path && (
-                <Link to={project.path} className="inline-block text-blue-900 hover:text-blue-700 text-lg">
+                <Link to={project.path} className="inline-block text-blue-700 hover:text-blue-500 text-lg">
                   More Info <FaArrowRight className="inline" />
                 </Link>
               )}

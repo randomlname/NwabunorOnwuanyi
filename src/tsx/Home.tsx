@@ -25,7 +25,7 @@ const Home: React.FC = () => {
                 To enhance my programming skills, I decided to work on a series of projects, starting with the development of a budgeting app. This application is built using Node.js, React, and PostgreSQL, 
                 and is designed to help users manage and track their finances.
             </p>
-            <p className="lg:text-justify  mb-10">
+            <p className="lg:text-justify mb-10">
                 In 2023, I honed my skills in PHP, MySQL, jQuery, Laravel and JavaScript, and explored new technologies like AWS, Firebase, Flutter, 
                 and Unity to broaden my development capabilities. Additionally, I ventured into machine learning, tackling projects using PyTorch for the first time.
             </p>
