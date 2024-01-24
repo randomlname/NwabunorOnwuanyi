@@ -9,7 +9,10 @@
             "alt": "React, Nodejs, PostgresSQL, Sequelize",
             "path": "/projects/2/Budget-App",
             "githubUrl": "",
-            "externalUrl": ""
+            "webUrl": "",
+            "appleStoreUrl": "",
+            "googleStoreUrl": "",
+            "status": "On Hold"
         },
         {
             "id": 1,
@@ -19,7 +22,10 @@
             "alt": "Php, MySql, Bootstrap",
             "path": "",
             "githubUrl": "https://github.com/randomlname/HospitalDatabase",
-            "externalUrl": ""
+            "webUrl": "",
+            "appleStoreUrl": "",
+            "googleStoreUrl": "",
+            "status": ""
         }
     ]
 }

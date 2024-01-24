@@ -3,7 +3,11 @@ import { Link } from 'react-router-dom';
 import { FaGithub, FaLink, FaArrowRight } from 'react-icons/fa';
 import projectData from '../project/Projects.json';
 
-type project = { id: number; title: string; description: string; techStackImgUrl: string; alt: string; path: string; githubUrl: string; externalUrl: string; };
+type project = { 
+                  id: number; title: string; description: string; 
+                  techStackImgUrl: string; alt: string; path: string; githubUrl: string; 
+                  webUrl: string; appleStoreUrl: string;  googleStoreUrl: string; status: string; 
+                };
 type ProjectData = { Projects: project[] };
 
 const Projects: React.FC = () => {
@@ -35,7 +39,10 @@ const Projects: React.FC = () => {
       <div className="space-y-4">
         {projects.map(project =>
           <div key={project.id} className="projectDiv p-4 shadow rounded-3xl bg-gray-200">
-            <h2 className="text-xl font-semibold">{project.title}</h2>
+            <h2 className="text-xl font-semibold">{project.title}  
+                { project.status === "Archived" ? ( <span className='projectArchive rounded-3xl bg-gray-400 p-1 ml-3 text-sm'>{project.status}</span> ) : 
+                  project.status === "On Hold" ? ( <span className='projectHold rounded-3xl bg-yellow-400 p-1 ml-3 text-sm'>{project.status}</span> ) : (<span></span>) }
+            </h2>
             <p className='my-5'>
               {project.description}
             </p>
@@ -44,8 +51,8 @@ const Projects: React.FC = () => {
               <TechIcon alt={project.alt} src={project.techStackImgUrl}/>
             </div>
             <div className="mt-4 flex justify-end items-center space-x-3">
-              {project.externalUrl && (
-                <a href={project.externalUrl} target="_blank" rel="noopener noreferrer" className="text-black hover:text-gray-500 text-xl">
+              {project.webUrl && (
+                <a href={project.webUrl} target="_blank" rel="noopener noreferrer" className="text-black hover:text-gray-500 text-xl">
                   <FaLink className="inline mb-1" /> Web link
                 </a>
               )}
