@@ -40,8 +40,7 @@ const Projects: React.FC = () => {
         {projects.map(project =>
           <div key={project.id} className="projectDiv p-4 shadow rounded-3xl bg-gray-200">
             <h2 className="text-xl font-semibold">{project.title}  
-                { project.status === "Archived" ? ( <span className='projectArchive rounded-3xl bg-gray-400 p-1 ml-3 text-sm'>{project.status}</span> ) : 
-                  project.status === "On Hold" ? ( <span className='projectHold rounded-3xl bg-yellow-400 p-1 ml-3 text-sm'>{project.status}</span> ) : (<span></span>) }
+                { project.status === "Archived" ? ( <span className='projectArchive rounded-3xl bg-gray-400 p-1 ml-3 text-sm'>{project.status}</span> ): (<span></span>) }
             </h2>
             <p className='my-5'>
               {project.description}
