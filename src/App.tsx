@@ -49,14 +49,22 @@ const NavigationBar: React.FC = () => {
 
 const App: React.FC = () => {
   return (
-    <Router>
-      <NavigationBar />
-      <Routes>
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/projects/:projectId/:projectName" element={<ProjectDetailList />} />
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </Router>
+    <>
+      <Router>
+        <NavigationBar />
+        <main className="main-content">
+          <Routes>
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/projects/:projectId/:projectName" element={<ProjectDetailList />} />
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </main>
+        <footer className="footer">
+          <p>Copyright © 2023 - {new Date().getFullYear()} Nwabunor Jeff Onwuanyi - All Rights Reserved.</p>
+        </footer>
+      </Router>
+    </>
+    
   );
 };
 
