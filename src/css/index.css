@@ -54,7 +54,30 @@ a {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; /* Darken the scrollbar handle on hover */
+  background: #555;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.bullet-list {
+  list-style-type: disc;
+}
+
+.bullet-list-2 {
+  list-style-type: circle;
+}
+
+.icon-small {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 1.5rem; 
 }
 
 [data-theme="dark"] {
@@ -86,6 +109,9 @@ a {
   color: #cccccc;
 }
 
+[data-theme="dark"] .icon-small {
+  border: 1px solid #cccccc;
+}
 [data-theme="dark"] .projectArchive {
   --tw-bg-opacity: 1;
   background-color: rgb(107 114 128 / var(--tw-bg-opacity));

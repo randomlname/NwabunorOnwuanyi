@@ -37,7 +37,7 @@ const ProjectDetailList: React.FC = () => {
     }, [projectId]);
 
     const handleBackClick = () => {
-        navigate(-1); 
+        navigate('/projects'); 
     };
     
     const handlePostClick = async (filename: string, foldername: string) => {
