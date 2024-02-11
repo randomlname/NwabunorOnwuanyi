@@ -83,9 +83,7 @@ const Resume: React.FC = () => {
             <div className='mb-5'>
                 <h2 className='border-b-2 my-3'> <span className='font-bold text-lg'>Senior Developer |</span> Petrepreneur, Toronto Ontario <span className='font-bold text-lg'>|</span> November 2023 - Present. </h2>
                 <p className='mb-3 ml-2'>
-                    In my current role at Petrepreneur, I am tasked with spearheading the development and implementation of new features for our Flutter-based mobile application, 
-                    compatible with both iOS and Android platforms. My responsibilities include rigorous testing and refining the app to ensure optimal performance, 
-                    leveraging Firebase as the backend infrastructure to create a seamless and robust market-ready application.
+                    In my current role at Petrepreneur, I am tasked with spearheading the development and implementation of new features for our Flutter-based mobile application, compatible with both iOS and Android platforms.
                 </p>
                 <ul className='bullet-list ml-10'>
                     <li>Lead the end-to-end development lifecycle for new feature rollouts on the Flutter app.</li>
@@ -106,13 +104,7 @@ const Resume: React.FC = () => {
             <div className='mb-5'>
                 <h2 className='border-b-2 my-3'> <span className='font-bold text-lg'>Full Stack Developer |</span> TracxTMS, Lethbridge Alberta <span className='font-bold text-lg'>|</span> December 2022 - October 2023. </h2>
                 <p className='mb-3 ml-2'>
-                    In my position at TracxTMS, I contributed to both the Support and New Feature Development teams. As part of the Support team, 
-                    my responsibilities encompassed diagnosing and resolving bugs reported by users, in addition to refining and enhancing the performance of existing code 
-                    and directly addressed customer inquiries via email regarding bug reports or requests for clarification.
-
-                    On the New Feature Development team, I played a key role in designing and implementing innovative features tailored to customer requests. 
-                    My work involved integrating services from GPS providers such as Motive and Geotab, as well as enabling data exchanges between our platform and 
-                    external systems like QuickBooks, ensuring their seamless integration and enhancing our website's functionality.
+                    In my position at TracxTMS, I contributed to both the Support and New Feature Development teams. My responsibilities encompassed diagnosing, resolving issues, and implementing innovative features.
                 </p>
                 <ul className='bullet-list ml-10'>
                     <li>Diagnosed and resolved bugs reported by users, enhancing the stability and performance of the platform.</li>
