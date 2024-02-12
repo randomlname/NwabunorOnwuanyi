@@ -2,56 +2,74 @@
     "Projects": 
     [
         {
-            "id": 4,
-            "title": "Woofinder",
-            "description": "Helping develop an App for pet owners.",
-            "techStackImgUrl": "https://skillicons.dev/icons?i=react,flutter,firebase,",
+            "id": "4",
+            "title": "Woofinder by Petrepreneur",
+            "description": "Innovating pet care with woofinder, the friendly app connecting pet lovers and exploring pet-friendly places",
+            "techStackImgUrl": "https://skillicons.dev/icons?i=react,flutter,firebase,,",
             "alt": "React, Flutter, Firebase",
             "path": "",
             "githubUrl": "",
             "webUrl": "https://www.woofinder.ca/",
             "appleStoreUrl": "",
             "googleStoreUrl": "",
-            "status": ""
+            "status": "",
+            "backgroundImage": ""
         },
         {
-            "id": 3,
+            "id": "3",
             "title": "Budget App",
             "description": "I wanted to test my skill in building a complex? application. The idea for this app is straight forward. It will enable the user to monitor transactions by adding or removing them as well as a budget tab to help users see their goal and monitor monthly payments.",
-            "techStackImgUrl": "https://skillicons.dev/icons?i=react,nodejs,postgres,sequelize",
+            "techStackImgUrl": "https://skillicons.dev/icons?i=react,nodejs,postgres,sequelize,",
             "alt": "React, Nodejs, PostgresSQL, Sequelize",
-            "path": "/projects/3/Budget-App",
+            "path": "3/Budget-App",
             "githubUrl": "",
             "webUrl": "",
             "appleStoreUrl": "",
             "googleStoreUrl": "",
-            "status": ""
+            "status": "",
+            "backgroundImage": "/images/ProjectBackground/budgetAppBackground-light.jpeg"
         },
         {
-            "id": 2,
+            "id": "2",
             "title": "Image-Classification",
             "description": "A small project using PyTorch to define, train, and evaluate a neural network model on the MNIST dataset.",
-            "techStackImgUrl": "https://skillicons.dev/icons?i=pytorch,py,,",
+            "techStackImgUrl": "https://skillicons.dev/icons?i=pytorch,py,,,",
             "alt": "pytorch, python",
             "path": "",
             "githubUrl": "https://github.com/randomlname/Image-Classification",
             "webUrl": "",
             "appleStoreUrl": "",
             "googleStoreUrl": "",
-            "status": ""
+            "status": "",
+            "backgroundImage": ""
         },
         {
-            "id": 1,
+            "id": "1",
             "title": "Hospital Database",
             "description": "This project, which I developed during my school years with friends, was my first encounter with using a database, and I greatly enjoyed the experience. With the solid foundation it provided, I am looking forward to revisiting and redoing this project in the future. The functions of it inclued assigning doctors, nurses to patients and patients to rooms. The database was designed with tables for rooms, staff, and patients, incorporating relationships to track assignments, roles, working hours, and wages.",
-            "techStackImgUrl": "https://skillicons.dev/icons?i=php,mysql,bootstrap,",
+            "techStackImgUrl": "https://skillicons.dev/icons?i=php,mysql,bootstrap,,",
             "alt": "Php, MySql, Bootstrap",
             "path": "",
             "githubUrl": "https://github.com/randomlname/HospitalDatabase",
             "webUrl": "",
             "appleStoreUrl": "",
             "googleStoreUrl": "",
-            "status": "Archived"
+            "status": "Archived",
+            "backgroundImage": ""
+        },
+        {
+            "id": "0",
+            "title": "Card Game",
+            "description": "A project, which I developed during my school years, a basic card game using MVC principles.",
+            "techStackImgUrl": "https://skillicons.dev/icons?i=cpp,,,,",
+            "alt": "c++,,",
+            "path": "",
+            "githubUrl": "https://github.com/randomlname/CardGame",
+            "webUrl": "",
+            "appleStoreUrl": "",
+            "googleStoreUrl": "",
+            "status": "Archived",
+            "backgroundImage": ""
         }
     ]
 }

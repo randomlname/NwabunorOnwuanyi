@@ -36,7 +36,7 @@ const Resume: React.FC = () => {
             </p>
         </div>
 
-        <CollapsibleSection title="Skills" open={true}>
+        <CollapsibleSection title="Skills" open={false}>
             <p className='mb-3 ml-2'>
             </p>
             <ul className='bullet-list ml-10'>
@@ -79,7 +79,7 @@ const Resume: React.FC = () => {
             </ul>
         </CollapsibleSection>
 
-        <CollapsibleSection title="Professional Experience" open={false}>
+        <CollapsibleSection title="Professional Experience" open={true}>
             <div className='mb-5'>
                 <h2 className='border-b-2 my-3'> <span className='font-bold text-lg'>Senior Developer |</span> Petrepreneur, Toronto Ontario <span className='font-bold text-lg'>|</span> November 2023 - Present. </h2>
                 <p className='mb-3 ml-2'>

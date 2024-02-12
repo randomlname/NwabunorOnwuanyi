@@ -81,7 +81,7 @@ const ProjectDetailList: React.FC = () => {
                 <div className="rounded-full border-2 border-black md:w-12 h-12 flex items-center justify-center cursor-pointer" onClick={handleBackClick}>
                     <i className="fa-solid fa-angles-left"></i>
                 </div>
-                <h1 className="text-2xl font-bold my-4 lg:mb-20">Entries for {projectName}</h1>
+                <h1 className="text-2xl font-bold my-4 lg:mb-20">Note entries for {projectName}</h1>
                 <div></div>
             </div>
             <div className="mx-auto lg:px-20">

@@ -4,7 +4,7 @@ const Home: React.FC = () => {
     return (
       <div className="container mx-auto px-4">
         <h1 className="text-4xl font-bold text-center my-6">Nwabunor Jeff Onwuanyi</h1>
-        <h2 className="text-2xl text-center my-7">Software Developer | Full-stack Developer </h2>
+        <h2 className="text-2xl text-center my-7">Full-stack Developer | AWS Solutions Architect - Associate | Cloud Engineer</h2>
 
         <div className="flex justify-center space-x-4 my-4">
             <a href="https://github.com/randomlname" target="_blank" rel="noreferrer">
