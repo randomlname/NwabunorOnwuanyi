@@ -3,13 +3,13 @@
     [
         {
             "id": "4",
-            "title": "Woofinder by Petrepreneur",
+            "title": "Woofinder",
             "description": "Innovating pet care with woofinder, the friendly app connecting pet lovers and exploring pet-friendly places",
             "techStackImgUrl": "https://skillicons.dev/icons?i=react,flutter,firebase,,",
             "alt": "React, Flutter, Firebase",
             "path": "",
             "githubUrl": "",
-            "webUrl": "https://www.woofinder.ca/",
+            "webUrl": "",
             "appleStoreUrl": "",
             "googleStoreUrl": "",
             "status": "",
