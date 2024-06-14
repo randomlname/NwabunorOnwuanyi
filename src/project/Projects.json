@@ -2,6 +2,20 @@
     "Projects": 
     [
         {
+            "id": "5",
+            "title": "thefidia",
+            "description": "Creating an app to have music writers and singers take more control of thier Royalties",
+            "techStackImgUrl": "https://skillicons.dev/icons?i=react,nodejs,postgres,sequelize,ts",
+            "alt": "React, Nodejs, PostgresSQL, Sequelize, Typescript, expressJS, tailwind, Redis, Docker, github",
+            "path": "",
+            "githubUrl": "",
+            "webUrl": "https://www.thefidia.com/",
+            "appleStoreUrl": "",
+            "googleStoreUrl": "",
+            "status": "",
+            "backgroundImage": ""
+        },
+        {
             "id": "4",
             "title": "Woofinder",
             "description": "Innovating pet care with woofinder, the friendly app connecting pet lovers and exploring pet-friendly places",

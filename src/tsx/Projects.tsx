@@ -27,9 +27,9 @@ const Projects: React.FC = () => {
   const TechIcon = ({ alt, src }: { alt: string, src: string }) => (
     <div className="relative flex flex-col items-center group">
       <img src={src} alt={alt} width="170" className='my-1 lg:my-0'/>
-      <span className="absolute bottom-0 items-center mb-6 hidden group-hover:flex">
-        <span className="relative z-10 p-2 text-xs leading-none text-white whitespace-no-wrap bg-black shadow-lg">{alt}</span>
-        <span className="absolute z-10 w-3 h-3 bg-black rotate-45 transform -translate-x-1/2 -translate-y-1/2"></span>
+      <span className="absolute bottom-0 items-center mb-3 hidden group-hover:flex">
+        <span className="relative z-10 text-xs leading-none text-white whitespace-no-wrap bg-black shadow-lg">{alt}</span>
+        <span className="absolute z-10 w-3 bg-black rotate-45 transform -translate-x-1/2 -translate-y-1/2"></span>
       </span>
     </div>
   );
