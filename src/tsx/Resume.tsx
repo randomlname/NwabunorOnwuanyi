@@ -81,24 +81,44 @@ const Resume: React.FC = () => {
 
         <CollapsibleSection title="Professional Experience" open={true}>
             <div className='mb-5'>
-                <h2 className='border-b-2 my-3'> <span className='font-bold text-lg'>Senior Developer |</span> Petrepreneur, Toronto Ontario <span className='font-bold text-lg'>|</span> November 2023 - Present. </h2>
+                <h2 className='border-b-2 my-3'> <span className='font-bold text-lg'>Lead Software Engineer |</span> ITAAW Distribution, Remote <span className='font-bold text-lg'>|</span> February 2024 - Present. </h2>
                 <p className='mb-3 ml-2'>
-                    In my current role at Petrepreneur, I am tasked with spearheading the development and implementation of new features for our Flutter-based mobile application, compatible with both iOS and Android platforms.
+                    In my current role at ITAAW Distribution, I lead the development of a high-performance web platform, utilizing Node.js, Express, and React to deliver responsive and scalable solutions.
                 </p>
                 <ul className='bullet-list ml-10'>
-                    <li>Lead the end-to-end development lifecycle for new feature rollouts on the Flutter app.</li>
+                    <li>Communicated effectively with clients to align project requirements, meet deadlines, and provide post-deployment support and optimizations</li>
+                    <li>Managed full-stack development projects, including database integration with PostgreSQL and MongoDB to ensure robust back-end functionality</li>
+                    <li>Implemented automated testing and monitoring solutions to improve code quality and system reliability</li>
+                    <li>Implemented modern software development methodologies to deliver high-quality code and maintain existing systems</li>
+                </ul>
+                <p className='mb-3 ml-10 mt-2'>
+                    <ul className='ml-8 bullet-list-2'>
+                        <li>
+                            <span className='font-bold'>Technologies used</span>: <span className='italic underline'>Node.js, Express, React, TypeScript, PostgreSQL, MongoDB, Git, Docker, AWS.</span>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+
+            <div className='mb-5'>
+                <h2 className='border-b-2 my-3'> <span className='font-bold text-lg'>Senior Software Engineer |</span> Petrepreneur, Toronto Ontario <span className='font-bold text-lg'>|</span> November 2023 - August 2024. </h2>
+                <p className='mb-3 ml-2'>
+                    In my role at Petrepreneur, I am tasked with spearheading the development and implementation of new features for our Flutter-based mobile application, compatible with both iOS and Android platforms.
+                </p>
+                <ul className='bullet-list ml-10'>
+                    <li>Led the end-to-end development lifecycle for new feature rollouts on the Flutter app.</li>
                     <li>Conduct thorough quality assurance testing to ensure a bug-free application across both iOS and Android systems.</li>
                     <li>Optimize app performance for a smooth, responsive user experience on a variety of devices.</li>
                     <li>Utilize Firebase for secure and scalable backend services, including authentication, database management, and analytics.</li>
                     <li>Implement modern development practices and methodologies to maintain high code standards and app reliability.</li>
                 </ul>
-                {/* <p className='mb-3 ml-10'>
+                <p className='mb-3 ml-10 mt-2'>
                     <ul className='ml-8 bullet-list-2'>
                         <li>
-                            <span className='font-bold'>Technologies used</span>: React, Flutter, Firebase.
+                            <span className='font-bold'>Technologies used</span>: <span className='italic underline'>React, Flutter, Firebase, MongoDB, Git.</span>
                         </li>
                     </ul>
-                </p> */}
+                </p>
             </div>
 
             <div className='mb-5'>
@@ -114,13 +134,13 @@ const Resume: React.FC = () => {
                     <li>Enabled data exchanges between our platform and external systems like QuickBooks, streamlining financial management for users.</li>
                     <li>Ensured seamless integration of new features and third-party services, enhancing the website's functionality and user satisfaction.</li>
                 </ul>
-                {/* <p className='mb-3 ml-10'>
+                <p className='mb-3 ml-10 mt-2'>
                     <ul className='ml-8 bullet-list-2'>
                         <li>
-                            <span className='font-bold'>Technologies used</span>: PHP, Laravel, MySql, jQuery, CSS, HTML, KoolReport. 
+                            <span className='font-bold'>Technologies used</span>: <span className='italic underline'>PHP, Laravel, MySql, jQuery, JavaScript, CSS, HTML, KoolReport, AWS, Docker, Git.</span>
                         </li>
                     </ul>
-                </p> */}
+                </p>
             </div>
         </CollapsibleSection>
 
@@ -129,7 +149,7 @@ const Resume: React.FC = () => {
                 <div className='mb-5 px-4'>
                     <h2 className='border-b-2 my-3'></h2>
                     <ul className='bullet-list-2 ml-10'>
-                        <li></li>
+                        <li>AWS Cloud Certified Solutions Architect Associate</li>
                     </ul>
                     <p className='mb-3 ml-12'>
                     </p>

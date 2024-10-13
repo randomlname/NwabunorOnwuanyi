@@ -7,6 +7,7 @@ import ProjectDetailList from './tsx/ProjectDetailList';
 import Resume from './tsx/Resume';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
+import StratumLabs from './tsx/stratumLabs';
 
 
 const NavigationBar: React.FC = () => {
@@ -42,6 +43,9 @@ const NavigationBar: React.FC = () => {
           <li className={navItemClass('/resume')}>
             <Link to="/resume" className="block px-3 py-2 rounded">Resume</Link>
           </li>
+          {/* <li className={navItemClass('/stratumLabs')}>
+            <Link to="/stratumLabs" className="block px-3 py-2 rounded">Stratum Labs</Link>
+          </li> */}
           <button onClick={toggleDarkMode} className="dark-mode-toggle">
             { darkMode ? <FontAwesomeIcon icon={faSun} /> : <FontAwesomeIcon icon={faMoon} /> }
           </button>
@@ -62,6 +66,7 @@ const App: React.FC = () => {
             <Route path="/projects/:projectId/:projectName" element={<ProjectDetailList />} />
             <Route path="/" element={<Home />} />
             <Route path="/resume" element={<Resume />} />
+            {/* <Route path="/stratumLabs" element={<StratumLabs />} /> */}
           </Routes>
         </main>
         <footer className="footer">
